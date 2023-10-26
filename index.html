@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>I'm Giada, a student at Winc and soon Full-Stack Developer!</p>
+        </section>
+
+        <section class="coding">
+            <h2>The language I've master:</h2>
+            <ul>
+                <li>React</li>
+                <li>Javascript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023, here my last assignment</p>
+    </footer>
+</body>
+</html>
