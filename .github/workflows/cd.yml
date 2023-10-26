@@ -26,7 +26,7 @@ jobs:
         run: pip install Flask
 
       - name: Change working directory
-        run: cd cd-assignment/flask-app 
+        run: cd cd-assignment/flask-app
 
       - name: Build your application
         run: python main.py
