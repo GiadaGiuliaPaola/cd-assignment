@@ -25,12 +25,6 @@ jobs:
       - name: Install Flask
         run: pip install Flask
 
-      - name: Change working directory
-        run: cd CD-assignment/flask-app
-
-      - name: Build your application
-        run: python main.py
-
       - name: executing remote ssh commands
         uses: appleboy/ssh-action@v1.0.0
         with:
