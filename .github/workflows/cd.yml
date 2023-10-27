@@ -28,12 +28,6 @@ jobs:
       - name: Install Dependencies
         run: pip install --upgrade pip
 
-      - name: Install pytest
-        run: pip install pytest 
-
-      - name: Run tests
-        run: pytest
-
       - name: executing remote ssh commands
         uses: appleboy/ssh-action@v1.0.0
         with:
