@@ -1,6 +1,5 @@
 name: Continuous Deployment
 
-
 on:
   push:
     branches: [ "main" ]
@@ -15,11 +14,7 @@ jobs:
     steps:
       - name: Set up initial environment
         run: echo "Setting up the initial environment"
-
-  deploy:
-    needs: setup
-    runs-on: ubuntu-latest  
-    steps:
+        
       - name: Checkout code
         uses: actions/checkout@v2
         
@@ -34,6 +29,10 @@ jobs:
       - name: Install Dependencies
         run: pip install --upgrade pip
 
+  deploy:
+    needs: setup
+    runs-on: ubuntu-latest  
+    steps:
       - name: executing remote ssh commands
         uses: appleboy/ssh-action@v1.0.0
         with:
