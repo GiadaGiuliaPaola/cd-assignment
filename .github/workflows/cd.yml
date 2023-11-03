@@ -43,3 +43,5 @@ jobs:
           script: |
             cd /root/cd-assignment/flask-app
             git pull origin main
+            sudo systemctl restart app.service
+            sudo systemctl status app.service
