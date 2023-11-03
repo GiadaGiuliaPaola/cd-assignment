@@ -44,4 +44,3 @@ jobs:
           script: |
             cd /root/cd-assignment/flask-app
             git pull origin main
-            /usr/bin/python3 main.py
