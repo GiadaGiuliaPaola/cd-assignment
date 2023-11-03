@@ -10,10 +10,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
-    needs: test
+  setup:
     runs-on: ubuntu-latest
-    
+    steps:
+      - name: Set up initial environment
+        run: echo "Setting up the initial environment"
+
+  deploy:
+    needs: setup
+    runs-on: ubuntu-latest  
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
