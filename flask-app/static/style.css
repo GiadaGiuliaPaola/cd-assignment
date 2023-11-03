@@ -58,14 +58,19 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
+ul {
+    padding-top: 20px;
+    list-style: none;
+}
+
 h2 {
     font-size: 24px;
     color: #333;
 }
 
 footer {
-    background-color: #a2c4ad;
-    color: #ffffff48;
+    background-color: #148f43c1;
+    color: #ffffff;
     padding: 20px;
     position: absolute;
     bottom: 0;
